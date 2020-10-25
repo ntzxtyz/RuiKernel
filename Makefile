@@ -1,6 +1,5 @@
 all: boot.o init.o main.o
 	ld -m elf_x86_64 -T kernel.lds -o system boot.o init.o main.o
-	mv system ..
 	rm *.o 
 
 boot.o: boot/boot.S
