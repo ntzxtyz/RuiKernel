@@ -1,7 +1,7 @@
 all: boot.o init.o main.o
 	ld -m elf_x86_64 -T kernel.lds -o system boot.o init.o main.o
-	objcopy -O binary system kernel.bin
-	rm *.o system
+	mv system ..
+	rm *.o 
 
 boot.o: boot/boot.S
 	gcc  -I . -m32 -nolibc -nostdlib -c boot/boot.S -o boot/boot.o
