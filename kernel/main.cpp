@@ -25,4 +25,3 @@ namespace kernel {
 		Start_Kernel();
 	}
 }
-
