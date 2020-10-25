@@ -35,7 +35,7 @@ namespace MM {
 	}
 	
 	void init(void) {
-		Info *info = (Info *) 0x7200;
+		Info *info = (Info *) 0x7000;
 		int i, j;
 		for (i = 0; i < 20; i++) {
 			if (info[i].type == Empty) {

@@ -2,7 +2,8 @@
 // Created by taishang on 2020/10/1.
 //
 
-#include <kernel/main.h>
+#include <main.h>
+#include <io/io.h>
 #include "mm/mm.h"
 
 /*
@@ -14,14 +15,9 @@
 
 namespace kernel {
 	
-	void Start_Kernel(void) {
-		while (1);
-	}
-	
-	extern "C" void sysinit(void) {
+	extern "C" void Start_Kernel(void) {
 		MM::init();
-		//  PM::init();
-		//  NW::init();
-		Start_Kernel();
+		IO::init();
+		while (1);
 	}
 }

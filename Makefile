@@ -14,7 +14,7 @@ init.o: boot/init.c
 	rm boot/init.o
 
 main.o: kernel/main.cpp
-	gcc  -I . -m64 -nolibc -nostdlib -c kernel/main.cpp -o main.o
+	gcc  -I ./kernel/ -m64 -nolibc -nostdlib -c kernel/main.cpp -o main.o
 
 clean:
 	rm *.o boot/*.o

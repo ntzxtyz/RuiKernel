@@ -142,7 +142,7 @@ tmp:
 	    bts	eax,	31
 	    mov	cr0,	eax
 
-	    jmp	0x10:	sysinit
+	    jmp	0x10:	Start_Kernel
 
 table:  .quad    0x0000000000000000    /* NULL descriptor */
         .quad    0x00af9a000000ffff    /* __KERNEL_CS */

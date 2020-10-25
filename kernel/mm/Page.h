@@ -62,7 +62,7 @@ void load_cr3(CR3 cr3) {
 
 #pragma pack(1)
 struct Info {
-	unsigned long long addr, size;
+	unsigned int addr, size;
 	unsigned int type;
 };
 union kit {
