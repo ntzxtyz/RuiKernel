@@ -1,9 +1,6 @@
-//
-// Created by taishang on 2020/10/23.
-//
+#ifndef MULTIBOOT_HEADER
+#define MULTIBOOT_HEADER 1
 
-#ifndef RUIOS_MULTIBOOT_H
-#define RUIOS_MULTIBOOT_H
 /*  How many bytes from the start of the file we search for the header. */
 #define MULTIBOOT_SEARCH                        32768
 #define MULTIBOOT_HEADER_ALIGN                  8
@@ -69,5 +66,4 @@
 #define MULTIBOOT_CONSOLE_FLAGS_CONSOLE_REQUIRED 1
 #define MULTIBOOT_CONSOLE_FLAGS_EGA_TEXT_SUPPORTED 2
 
-
-#endif //RUIOS_MULTIBOOT_H
+#endif /*  ! MULTIBOOT_HEADER */
