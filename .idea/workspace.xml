@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -34,9 +37,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15b21669-8e37-4b2b-888b-d5fbf765ebed" name="默认的" comment="update">
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RUIOS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RUIOS.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kernel/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kernel/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kernel/Makefile" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +60,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="Make.Settings">
+    <option name="useCygwin" value="true" />
   </component>
   <component name="ProjectId" id="1iGLKB0sVhkf3D8KNeGyFtEow8c" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -82,16 +90,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
-  <component name="RunManager" selected="Makefile.clean">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Makefile.all">
     <configuration name="all" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/Makefile" target="all" workingDirectory="" arguments="">
+      <makefile filename="$PROJECT_DIR$/boot/Makefile" target="all" workingDirectory="" arguments="">
         <envs />
       </makefile>
       <method v="2" />
@@ -136,16 +139,16 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.make" />
       <item itemvalue="Makefile.all" />
       <item itemvalue="Makefile.boot" />
       <item itemvalue="Makefile.kernel" />
       <item itemvalue="Makefile.clean" />
+      <item itemvalue="Python.make" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Makefile.clean" />
         <item itemvalue="Makefile.all" />
+        <item itemvalue="Makefile.clean" />
         <item itemvalue="Makefile.kernel" />
         <item itemvalue="Makefile.boot" />
         <item itemvalue="Python.make" />
@@ -206,6 +209,8 @@
       <workItem from="1603462975309" duration="4013000" />
       <workItem from="1603549488689" duration="9899000" />
       <workItem from="1603595738565" duration="9221000" />
+      <workItem from="1604817736752" duration="673000" />
+      <workItem from="1604818470018" duration="508000" />
     </task>
     <task id="LOCAL-00001" summary="lue">
       <created>1603468952910</created>
@@ -263,7 +268,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -296,9 +313,10 @@
       <screen x="0" y="28" width="1440" height="932" />
     </state>
     <state x="317" y="52" width="801" height="857" key="#C/C++/0.28.1440.932@0.28.1440.932" timestamp="1603597147079" />
-    <state x="181" y="103" width="1076" height="723" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601693734254">
-      <screen x="0" y="28" width="1440" height="932" />
+    <state x="181" y="74" width="1076" height="739" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604818777351">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
+    <state x="181" y="74" width="1076" height="739" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.920@0.0.1440.920" timestamp="1604818777351" />
     <state x="181" y="103" width="1076" height="723" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1440.932@0.28.1440.932" timestamp="1601693734254" />
     <state x="520" y="221" width="396" height="434" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603612155905">
       <screen x="0" y="28" width="1440" height="932" />
@@ -320,6 +338,10 @@
       <screen x="0" y="28" width="1440" height="932" />
     </state>
     <state x="100" y="65" width="1240" height="753" key="DiffContextDialog/0.28.1440.932@0.28.1440.932" timestamp="1603612095126" />
+    <state x="629" y="103" key="EnvironmentVariablesDialog" timestamp="1604818774185">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="629" y="103" key="EnvironmentVariablesDialog/0.0.1440.920@0.0.1440.920" timestamp="1604818774185" />
     <state x="389" y="135" width="424" height="504" key="FileChooserDialogImpl" timestamp="1601634243669">
       <screen x="0" y="28" width="1440" height="932" />
     </state>
@@ -356,9 +378,10 @@
       <screen x="0" y="28" width="1440" height="932" />
     </state>
     <state width="1440" height="300" key="GridCell.Tab.1.right/0.28.1440.932@0.28.1440.932" timestamp="1603609766722" />
-    <state x="204" y="7" width="1031" height="750" key="SettingsEditor" timestamp="1602909645044">
-      <screen x="0" y="28" width="1440" height="932" />
+    <state x="204" y="-21" width="1031" height="750" key="SettingsEditor" timestamp="1604818646550">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
+    <state x="204" y="-21" key="SettingsEditor/0.0.1440.920@0.0.1440.920" timestamp="1604818646550" />
     <state x="204" y="7" width="1031" height="750" key="SettingsEditor/0.28.1440.932@0.28.1440.932" timestamp="1602909645044" />
     <state x="318" y="16" width="800" height="551" key="Vcs.Push.Dialog.v2" timestamp="1603610664614">
       <screen x="0" y="28" width="1440" height="932" />

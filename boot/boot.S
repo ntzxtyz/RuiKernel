@@ -1,4 +1,4 @@
-#include <multiboot2.h>
+#include "multiboot2.h"
 
 #define	STACK_SIZE	0x4000
 

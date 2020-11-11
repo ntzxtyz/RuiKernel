@@ -1,5 +1,5 @@
-#include <multiboot2.h>
-#include <init.h>
+#include "multiboot2.h"
+#include "init.h"
 
 void init(unsigned long magic, unsigned long addr) {
 
