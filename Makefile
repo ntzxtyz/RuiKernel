@@ -17,4 +17,4 @@ main.o: kernel/main.cpp
 	g++ -mcmodel=large -fno-builtin -m64 -c kernel/main.cpp
 
 clean:
-	rm *.o */*.o
+	rm *.o */*.o */*.swp
