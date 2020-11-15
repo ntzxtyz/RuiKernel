@@ -15,7 +15,7 @@ void init(unsigned long magic, unsigned long addr) {
                 switch (tag->type) {
                         case MULTIBOOT_TAG_TYPE_MMAP: {
                                 multiboot_memory_map_t *mmap;
-                                struct meminfo *info = (struct meminfo *) 0x7000;
+                                struct meminfo *info = (struct meminfo *) MEMMAP_ADDR;
                                 int i = 0;
 
                                 for (mmap = ((struct multiboot_tag_mmap *) tag)->entries;
@@ -34,7 +34,7 @@ void init(unsigned long magic, unsigned long addr) {
 
                         case MULTIBOOT_TAG_TYPE_FRAMEBUFFER: {
                                 struct multiboot_tag_framebuffer *tagfb = (struct multiboot_tag_framebuffer *) tag;
-                                struct bufferinfo *info = (struct bufferinfo *) 0x7200;
+                                struct bufferinfo *info = (struct bufferinfo *) BUFFER_ADDR;
                                 if (tagfb->common.framebuffer_type == MULTIBOOT_FRAMEBUFFER_TYPE_RGB) {
                                         info->addr = tagfb->common.framebuffer_addr;
                                         info->width = tagfb->common.framebuffer_width;

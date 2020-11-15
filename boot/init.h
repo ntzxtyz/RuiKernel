@@ -285,11 +285,13 @@ struct multiboot_tag_load_base_addr {
 	multiboot_uint32_t load_base_addr;
 };
 
+#define BUFFER_ADDR 0x7000
 struct bufferinfo {
 	unsigned long long addr;
 	unsigned int width, height;
 };
 
+#define MEMMAP_ADDR 0x7200
 struct meminfo {
 	unsigned long long addr, size;
 	unsigned int type;
