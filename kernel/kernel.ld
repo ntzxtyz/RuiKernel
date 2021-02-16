@@ -4,30 +4,26 @@ ENTRY(_start)
 
 SECTIONS
 {
-	/* Link the kernel at this address: "." means the current address */
-        /* Must be equal to KERNLINK */
 	. = 0x100000; 
-
 	.text : {
 		*(.text)
 	}
+	. = ALIGN(0x1000);
 
 	.rodata : {
 		*(.rodata .rodata.* .gnu.linkonce.r.*)
 	}
 	. = ALIGN(0x1000);
 
-	/* The data segment */
+	_edata = .;
 	.data : {
 		*(.data)
 	}
-
 	. = ALIGN(0x1000);
 
 	.bss : {
 		*(.bss)
 		*(COMMON)
 	}
-
-	. = ALIGN(0x1000);
+	_end = .;
 }

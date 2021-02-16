@@ -1,9 +1,10 @@
-#include <system.h>
 #include <mm/mm.h>
 #include <pm/pm.h>
 #include <io/io.h>
 
-PUBLIC void Start_Kernel(){
+extern"C" void Start_Kernel(){
+    while(1)
+        ;
     //init memory struction
     MM::MemoryManager mm;
     mm.init();
